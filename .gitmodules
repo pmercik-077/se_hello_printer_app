@@ -1,0 +1,3 @@
+[submodule "se_hello_printer_app"]
+	path = se_hello_printer_app
+	url = https://github.com/pmercik-077/se_hello_printer_app
