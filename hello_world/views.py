@@ -6,6 +6,7 @@ from flask import request, jsonify, render_template
 
 @app.route("/")
 def index(request):
+    return render(request, 'index.html') 
     data = {"imie": "Pawel", "msg": "Hello world!"}
 
     if request.args.get("output") == "json":
@@ -18,7 +19,8 @@ msg = "Hello World!"
 
 
 @app.route('/')
-def index():
+def index(request):
+    return render(request, 'home.html')
     output = request.args.get('output')
     if not output:
         output = PLAIN
