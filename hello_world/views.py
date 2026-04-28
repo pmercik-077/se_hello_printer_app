@@ -5,7 +5,7 @@ from flask import request, jsonify, render_template
 
 
 @app.route("/")
-def index():
+def index(request):
     data = {"imie": "Pawel", "msg": "Hello world!"}
 
     if request.args.get("output") == "json":
